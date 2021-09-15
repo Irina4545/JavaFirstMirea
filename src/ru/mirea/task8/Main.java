@@ -1,4 +1,4 @@
-package ru.mirea.task5;
+package ru.mirea.task8;
 
 import javax.swing.*;
 import java.awt.*;

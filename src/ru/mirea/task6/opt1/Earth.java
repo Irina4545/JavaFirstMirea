@@ -1,6 +1,6 @@
 package ru.mirea.task6.opt1;
 
-public class Earth extends lab2.Planet implements Sputnik{
+public class Earth extends Planet implements Sputnik{
     public Earth(int weight, String surname){super(weight, surname);}
     public void infoPlanet()
     {

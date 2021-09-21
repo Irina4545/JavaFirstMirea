@@ -1,6 +1,6 @@
 package ru.mirea.task6.opt1;
 
-public class Venus extends lab2.Planet {
+public class Venus extends Planet {
     public Venus(int weight, String surname){super(weight,surname);}
     public void infoPlanet()
     {

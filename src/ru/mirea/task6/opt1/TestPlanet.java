@@ -8,7 +8,8 @@ public class TestPlanet {
         if (p1 instanceof Sputnik){
             int k=((Sputnik)p1).getSput();
             System.out.println("Имеет спутник");
-        }
+        }else
+            System.out.println("Спутника нет");
     Planet p2=new Venus(5, "Венеры");
     p2.infoPlanet();
         if (p2 instanceof Sputnik){

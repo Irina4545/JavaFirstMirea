@@ -6,7 +6,6 @@ public class Earth extends Planet implements Sputnik{
     {
         System.out.println("Вес "+super.getSurname()+" в тоннах:"+super.getWeight());
     }
-
     public int getSput() {
         return 0;
     }

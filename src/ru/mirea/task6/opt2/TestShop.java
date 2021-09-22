@@ -6,14 +6,14 @@ public class TestShop {
         Shop s1=new BlackJeans("Черные",  1800);
         s1.info();
         if (s1 instanceof Priceable){
-            int k=((Priceable)s1).motLot();
+            int k=((Priceable)s1).getLot();
             System.out.println("Есть в наличии");
         }else
             System.out.println("Нет в наличии");
         Shop s2=new BlueJeans("Синие",1500);
         s2.info();
         if (s2 instanceof Priceable){
-            int k=((Priceable)s2).motLot();
+            int k=((Priceable)s2).getLot();
             System.out.println("Есть в наличии");
         }else
             System.out.println("Нет в наличии");

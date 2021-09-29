@@ -1,10 +1,32 @@
 package ru.mirea.task7.opt1;
 
-public  class Rectangle extends Shape {public Rectangle(String color, boolean filled){super(color,filled);}
-    protected double width;
-    protected double length;
+public  class Rectangle extends Shape {
+    private double width;
+    private double length;
 
-    public Rectangle(String color, boolean filled, double width) {
+    public Rectangle() {
+        super();
+        this.width = 1;
+        this.length = 1;
+    }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 0;
+    }
+
+    public Rectangle(double width,double length) {
+        super();
+        this.width = width;
+        this.length = length;
+    }
+
+    public Rectangle(double width,double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.length = length;
@@ -14,32 +36,24 @@ public  class Rectangle extends Shape {public Rectangle(String color, boolean fi
         return width;
     }
 
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
     public double getLength() {
         return length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
     }
 
     public void setLength(double length) {
         this.length = length;
     }
 
-    double getArea(){
-        return width*length;
-    }
-
-    double getPerimeter() {
-        return 2*(width+length);
-    }
-
     public String toString() {
         return "Rectangle{" +
                 "width=" + width +
                 ", length=" + length +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
+                ", color='" +super.getColor() + '\'' +
+                ", filled=" + super.isFilled() +
                 '}';
     }
 }

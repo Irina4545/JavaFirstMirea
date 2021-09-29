@@ -1,34 +1,43 @@
 package ru.mirea.task7.opt1;
 
-public class Circle extends Shape {public Circle(String color, boolean filled){super(color,filled);}
-    protected double radius;
+public class Circle extends Shape {
+    private double radius;
 
-    public Circle(String color, boolean filled, double radius) {
+    public Circle() {
+        super();
+        this.radius = 1;
+    }
+
+    public Circle(double radius) {
+        super();
+        this.radius = radius;
+    }
+
+    public Circle(double radius,String color,boolean filled){
         super(color, filled);
-        this.radius = radius;
+        this.radius=radius;
     }
 
-    public double getRadius() {
-        return radius;
-    }
+    public double getRadius() {return radius;}
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
+    public void setRadius(double radius) {this.radius = radius;}
 
-    double getArea(){
+    @Override
+    public double getArea(){
         return Math.PI*radius*radius;
     }
 
-    double getPerimeter() {
+    @Override
+    public double getPerimeter() {
         return 2*Math.PI*radius;
     }
 
+    @Override
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
+                ", color='" + getColor() + '\'' +
+                ", filled=" + super.isFilled() +
                 '}';
     }
 }

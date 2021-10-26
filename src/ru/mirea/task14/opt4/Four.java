@@ -3,6 +3,9 @@ package ru.mirea.task14.opt4;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+//ввести 5 карт для первого игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+//ввести 5 карт для второго игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+
 public class Four {
     public void distribution(LinkedList player){
         Scanner scanner = new Scanner(System.in);

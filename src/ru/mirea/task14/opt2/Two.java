@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+//ввести 5 карт для первого игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+//ввести 5 карт для второго игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+
 public class Two {
     public void distribution(Queue player){
         Scanner scanner = new Scanner(System.in);

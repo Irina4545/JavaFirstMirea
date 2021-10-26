@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException
     {
-        try (FileReader reader = new FileReader("C:\\\\Users\\\\Ирина\\\\IdeaProjects\\\\JavaFirstMirea\\\\src\\\\ru\\\\mirea\\\\task15\\\\test.txt\"")){
+        try (FileReader reader = new FileReader("C:\\Users\\Ирина\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task15\\test.txt")){
             System.out.println("Из файла получен текст: ");
             int c;
             while ((c = reader.read()) != -1)

@@ -4,6 +4,9 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+//ввести 5 карт для первого игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+//ввести 5 карт для второго игрока через пробелы(в конце нажать enter, но не ставить в конце строки пробел)
+
 public class Three {
     public void distribution(Deque player){
         Scanner scanner = new Scanner(System.in);

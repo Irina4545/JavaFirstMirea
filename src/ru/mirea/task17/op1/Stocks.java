@@ -29,4 +29,12 @@ public enum Stocks {
         return status;
     }
 
+    @Override
+    public String toString() {
+        return "Stocks{" +
+                "i=" + (i/i) +
+                ", cost=" + cost +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }

@@ -1,9 +1,8 @@
 package ru.mirea.task27;
-
-//восспользуемся раблотой HashMap для хранения номеров ячеек клиентов фондового отделения банка
-
 import java.util.HashMap;
 import java.util.Set;
+
+//восспользуемся раблотой HashMap для хранения номеров ячеек клиентов фондового отделения банка
 
 public class Info {
     public static void main(String [] args){
